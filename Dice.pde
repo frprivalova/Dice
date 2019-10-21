@@ -16,11 +16,14 @@ void draw()
     for(int i = 0; i<=220; i+=100){
       bob = new Die(i,p);
       bob.show();
+
+
       sum = sum + bob.myValue;
       
     }
   }
-  text(sum,10,10);
+  textSize(18);
+  text("Sum: "+sum,20,20);
 }
 void mousePressed()
 {
